@@ -25,7 +25,6 @@ body{
 	letter-spacing: 0.02em;
 	font-size: 19px;
 	color: #848484;
-	transition: all 0.5 ease;
 	font-weight: 400;
 	line-height: 1.5em;
 }
@@ -665,11 +664,19 @@ input{
 }
 
 input::-moz-placeholder{
-	font-style: 100px;
+	font-size: 22px;
+	font-weight: 400;
+	font-family: "Monserrat", sans-serif;
+	color: #3a4047;
+
 }
 
 input:-ms-input-placeholder{
-	font-style: 100px;
+	font-size: 22px;
+	font-weight: 400;
+	font-family: "Monserrat", sans-serif;
+	color: #3a4047;
+
 }
 
 input::placeholder{
@@ -701,7 +708,7 @@ footer a{
 
 footer li.nav__item{
 	width: auto;
-	transition: all 0.2 ease;
+	transition: all .2s ease;
 }
 
 footer li.nav__item:hover{
@@ -882,8 +889,7 @@ footer ul.nav__list{
 
 
 	.info__btn{
-		-ms-grid-row-align: center;
-		    align-self: center;
+		align-self: center;
 		width: 80%;
 	}
 
