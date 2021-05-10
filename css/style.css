@@ -88,6 +88,11 @@ a, a:hover, a:active{
 	color: inherit;
 }
 
+p{
+	margin: 0;
+	padding: 0;
+}
+
 .btn{
 	text-align: center;
 	cursor: pointer;
@@ -267,11 +272,6 @@ nav{
 
 /*About*/
 
-
-.about{
-
-}
-
 .about__wrapper{
 	display: flex;
 	justify-content: space-between;
@@ -336,6 +336,7 @@ nav{
 	max-width: 900px;
 	text-transform: uppercase;
 	letter-spacing: 3px;	
+	font-weight: 700;
 
 }
 
@@ -379,6 +380,7 @@ nav{
 .card__img{
 	flex: 1 1 425px;
 	width: 100%;
+	overflow: hidden;
 }
 
 .card-img{
@@ -386,6 +388,12 @@ nav{
 	height: 100%;
 	-o-object-fit: cover;
 	   object-fit: cover;
+	transition: transform .2s ease;
+
+}
+
+.card-img:hover{
+	transform: scale(1.1);
 }
 
 .card__title{
@@ -416,6 +424,65 @@ nav{
 }
 
 
+ /*Tour*/
+
+.tour__wrapper{
+	display: flex;
+	justify-content: space-between;
+
+}
+
+.tour-img {
+	width: 100%;
+	height: 100%;
+	-o-object-fit: cover;
+	   object-fit: cover;
+}
+
+.tour__content {
+	flex: 0 1 840px;
+	padding-left: 30px;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+
+}
+
+.tour__title {
+	text-align: left;
+}
+
+.tour__subtitle {
+	text-align: left;
+	text-transform: uppercase;
+	margin: 30px 0 30px 0;
+	max-width: 500px;
+	width: 70%;
+	letter-spacing: 2px;
+
+}
+
+.tour__text {
+	text-align: left;
+	 line-height: 1.2;
+	 font-size: 22px;
+	font-weight: 400;
+	letter-spacing: 2px;
+
+}
+
+.tour__text p{
+	margin-bottom: 55px;
+
+
+}
+.tour__text p:last-child{
+	margin-bottom: 0;
+}
+
+
+
+
 @media(max-width: 1000px){
 
 
@@ -435,19 +502,34 @@ nav{
 
 	.about__img{
 		width: 100%;
+		height: 600px;
 	}
-
-	.about-img{
-		-o-object-fit: fill;
-		   object-fit: fill;
-	}
-
 
 
 	/*With*/
 
 	.card{
 		width: 100%;
+	}
+
+
+	/*Tour*/
+
+	.tour__wrapper{
+		flex-wrap: wrap;
+	}
+
+	.tour__img{
+		width: 100%;
+		height: 400px;
+	}
+
+	.tour__content{
+		margin-top: 30px;
+	}
+
+	.tour__text p{
+		margin-bottom: 40px;
 	}
 }
 
@@ -462,6 +544,11 @@ nav{
 		    align-self: center;
 		width: 80%;
 	}
+
+
+	/*Tour*/
+
+	.tour__subtitle{
+		font-size: 25px;
+	}
 }
-
-
