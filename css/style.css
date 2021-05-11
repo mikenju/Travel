@@ -381,7 +381,7 @@ nav{
 	height: 30px;
 	box-shadow: none;
 	position: absolute;
-	bottom: -78px;
+	bottom: -60px;
 	border: none;
 	z-index: 100;
 	left: calc(50% - 69px);
@@ -399,7 +399,7 @@ nav{
 	height: 30px;
 	box-shadow: none;
 	position: absolute;
-	bottom: -78px;
+	bottom: -60px;
 	border: none;
 	z-index: 100;
 	right: calc(50% - 55px);
@@ -889,7 +889,8 @@ footer ul.nav__list{
 
 
 	.info__btn{
-		align-self: center;
+		-ms-grid-row-align: center;
+		    align-self: center;
 		width: 80%;
 	}
 
