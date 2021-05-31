@@ -20,6 +20,7 @@ $(function(){
     // autoplaySpeed: 2000,    
    	touchThreshold: 10,
 		speed: 300,
+		// adaptiveHeight: true,
   });
 
   $(".slider").on('afterChange', function(event, slick, currentSlide){
