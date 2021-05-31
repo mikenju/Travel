@@ -29,6 +29,10 @@ body{
 	line-height: 1.5em;
 }
 
+section {
+	overflow-x: hidden;
+}
+
 .container{
 	margin: 0 auto;
 	padding: 20px;
