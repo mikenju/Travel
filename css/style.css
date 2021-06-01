@@ -183,12 +183,17 @@ nav{
 
 .offer{
 	position: absolute;
-	top: 25%;
+	top: 50%;
 	text-align: center;
 	left: 0;
 	right: 0;
 	transform: translate(0, -50%);
 
+}
+
+.offer._animate-Active {
+	transform: translate(0,-50%);
+	opacity: 1;	
 }
 
 .offer__text{
